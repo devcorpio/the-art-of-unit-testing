@@ -23,6 +23,11 @@ function memCalculator() {
 
         return temp;
     }
+
+    return {
+        add,
+        result,
+    };
 }
 
 module.exports = memCalculator;
