@@ -4,7 +4,7 @@ function logAnalyzer() {
      * @return {boolean}
      */
     function isValidLogFileName(fileName) {
-        if (!fileName.endsWith('.SLF')) {
+        if (!fileName.toUpperCase().endsWith('.SLF')) {
             return false;
         }
 
