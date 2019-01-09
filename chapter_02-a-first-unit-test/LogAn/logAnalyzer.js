@@ -9,7 +9,7 @@ function logAnalyzer() {
     /**
      * @return {boolean}
      */
-    function getWasLastFilenameValid() {
+    function getWasLastFileNameValid() {
         return wasLastFileNameValid;
     }
 
@@ -33,7 +33,7 @@ function logAnalyzer() {
     }
 
     return {
-        getWasLastFilenameValid,
+        getWasLastFileNameValid,
         isValidLogFileName,
     };
 }

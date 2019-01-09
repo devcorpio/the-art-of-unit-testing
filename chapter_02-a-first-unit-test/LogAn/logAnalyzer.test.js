@@ -24,4 +24,22 @@ describe('isValidLogFileName', () => {
 
         expect(emptyLogFileName).toThrow('filename has to be provided');
     });
+
+    /**
+     * an example of state-based testing
+     */
+    it.each`
+        fileName         | expected
+        ${'johndoe.foo'} | ${false}
+        ${'johndoe.slf'} | ${true}
+    `(
+        'when called there changes wasLastFileNameValid that returns $expected',
+        ({ fileName, expected }) => {
+            console.log(fileName);
+            logAnalyzerInstance.isValidLogFileName(fileName);
+            const result = logAnalyzerInstance.getWasLastFileNameValid();
+
+            expect(result).toBe(expected);
+        }
+    );
 });
