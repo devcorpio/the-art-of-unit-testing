@@ -10,6 +10,10 @@ function logAnalyzer() {
 
         return true;
     }
+
+    return {
+        isValidLogFileName,
+    };
 }
 
 module.exports = logAnalyzer;
