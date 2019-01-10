@@ -27,19 +27,55 @@ I would like that people that works using Node.js could enjoy of the knowledge t
 
 The style of the code and the chosen tools are 100% my decision. (The good and the bad parts! :kissing_closed_eyes:)
 
-### Chapters
-
-1. The basics of unit testing
-2. A first unit test
-
-Working in the rest of the chapters... :grin:
-
 ## How study the repository
 
 1. For every chapter of the book has I created a directory
    where appears the final version of the code in the mentioned chapter.
 
 2. Every commit has a reference to the chapter related. Any change I needed to do has a commit, with the objective of follow the flow of the book.
+
+**Note**: If you want to open the links in another tab, just do a CTRL+click on the link.
+
+#### Chapters
+
+1. The basics of unit testing
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/8668ed2">Initial commit</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/254cba7">In order to commit formatted code I installed prettier, pretty-quick and husky</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/1ede197">update README</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/a03a1c4">preparing the simpleParser example, creating InvalidOperation custom error</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/43b2582">creating simpleParser example</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/7a5e84a">creating a test manually to do basic tests to simpleParser, I'm not using unit testing frameworks, yet</a>
+     </p>
+    </details>
+
+2. A first unit test
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/fc4c419">starting LogAn, the project that we are going to use in the next chapters</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/89c24d4">install jest</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/2e2bb78">renaming homemade test of the chapter 01 to avoid conflicts with jest</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/6caedc8">creating logAnalyzer and its test, that show us that the SUT have a bug</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0f54abd">fix isValidLogFileName in order to fix the test</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/6d01b7b">adding two more tests, one of them intetionally fails</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/5242ee2">fix in isValidLogFilename to fix the test</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/aaa3ecf">refactoring the code of thest using the parameterized tests technique</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/bb97e1e">adding setup to the test</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/279aacc">returns error if the filename is empty</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/7e50568">add test that assert that the error is thrown</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0900685">adding state logAnalyzer</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/8d21eb8">first state-based test for logAnalyzer</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/9b319ea">add a inmemory calculator to continuing trying state-based testing</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/6ecfd55">add a memory calculator in order to test it with state-based testing</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/232a8ae">update readme</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/09e19e4">remove .vscode from repository</a><br>
+     </p>
+    </details>
+
+Working in the rest of the chapters... :grin:
 
 ## How to use
 
