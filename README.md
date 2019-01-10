@@ -38,7 +38,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
 #### Chapters
 
-1. The basics of unit testing
+1. _The basics of unit testing_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -51,7 +51,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-2. A first unit test
+2. _A first unit test_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -72,6 +72,17 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/6ecfd55">add a memory calculator in order to test it with state-based testing</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/232a8ae">update readme</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/09e19e4">remove .vscode from repository</a><br>
+     </p>
+    </details>
+
+3. _Using stubs to break dependencies_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/b23053f">copy code from chapter 02 to the chapter 03 folder in order to continue with the book</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/e57c8f1">install @types/node, with that, I can work with types and node.js modules without vscode warnings</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/95768cf">check the validity of the file extension in a disk file, that creates an external dependency, unit tests are broken</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/42afa86">fixing logAnalyzer tests, right now they are integration tests and not unit tests, meh</a><br>
      </p>
     </details>
 
