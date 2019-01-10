@@ -10,19 +10,21 @@ describe.each([
     ['johndoe.slf', true],
     ['johndoe.SLF', true],
 ])('isValidLogFileName("%s"))', (fileName, expected) => {
-    it(`bad extension returns ${expected}`, () => {
-        const result = logAnalyzerInstance.isValidLogFileName(fileName);
+    it(`bad extension returns ${expected}`, async () => {
+        const result = await logAnalyzerInstance.isValidLogFileName(fileName);
         expect(result).toBe(expected);
     });
 });
 
 describe('isValidLogFileName', () => {
-    it('empty filename throws error', () => {
-        function emptyLogFileName() {
-            logAnalyzerInstance.isValidLogFileName('');
+    it('empty filename throws error', async () => {
+        async function emptyLogFileName() {
+            return logAnalyzerInstance.isValidLogFileName('');
         }
 
-        expect(emptyLogFileName).toThrow('filename has to be provided');
+        await expect(emptyLogFileName()).rejects.toThrow(
+            'filename has to be provided'
+        );
     });
 
     /**
@@ -34,9 +36,8 @@ describe('isValidLogFileName', () => {
         ${'johndoe.slf'} | ${true}
     `(
         'when called there changes wasLastFileNameValid that returns $expected',
-        ({ fileName, expected }) => {
-            console.log(fileName);
-            logAnalyzerInstance.isValidLogFileName(fileName);
+        async ({ fileName, expected }) => {
+            await logAnalyzerInstance.isValidLogFileName(fileName);
             const result = logAnalyzerInstance.getWasLastFileNameValid();
 
             expect(result).toBe(expected);
