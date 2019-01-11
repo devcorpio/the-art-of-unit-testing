@@ -1,8 +1,7 @@
-const fs = require('fs');
-const util = require('util');
 const ArgumentError = require('./ArgumentError');
+const fileExtensionManagerFactory = require('./fileExtensionManager');
 
-const readFilePromisied = util.promisify(fs.readFile);
+const fileExtensionManager = fileExtensionManagerFactory();
 
 function logAnalyzer() {
     /**
@@ -28,7 +27,7 @@ function logAnalyzer() {
             throw new ArgumentError('filename has to be provided');
         }
 
-        const result = await isValid(fileName);
+        const result = await fileExtensionManager.isValid(fileName);
 
         if (!result) {
             return false;
@@ -36,32 +35,6 @@ function logAnalyzer() {
 
         wasLastFileNameValid = true;
         return true;
-    }
-
-    /**
-     * @param {string} fileName
-     */
-    async function isValid(fileName) {
-        const fileNameExtensions = await readFilePromisied(
-            `${__dirname}/fileNameExtensions.config.json`,
-            'utf8'
-        ).then(fileContent => JSON.parse(fileContent).extensions);
-
-        const isValidExtension = fileNameExtensions.some(
-            function checkFileNameExtension(extension) {
-                if (
-                    fileName
-                        .toUpperCase()
-                        .endsWith(`.${extension.toUpperCase()}`)
-                ) {
-                    return true;
-                }
-
-                return false;
-            }
-        );
-
-        return isValidExtension;
     }
 
     return {
