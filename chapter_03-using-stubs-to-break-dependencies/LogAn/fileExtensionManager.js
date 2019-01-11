@@ -6,6 +6,7 @@ const readFilePromisied = util.promisify(fs.readFile);
 function fileExtensionManager() {
     /**
      * @param {string} fileName
+     * @return {Promise}
      */
     async function isValid(fileName) {
         const fileNameExtensions = await readFilePromisied(

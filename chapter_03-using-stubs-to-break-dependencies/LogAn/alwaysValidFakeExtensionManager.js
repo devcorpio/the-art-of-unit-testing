@@ -1,8 +1,9 @@
 function alwaysValidFakeExtensionManager() {
     /**
      * @param {string} fileName
+     * @return {Promise}
      */
-    function isValid(fileName) {
+    async function isValid(fileName) {
         return true;
     }
 

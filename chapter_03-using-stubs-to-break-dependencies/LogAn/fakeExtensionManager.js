@@ -14,7 +14,7 @@ function fakeExtensionManager() {
     /**
      * @param {string} fileName
      */
-    function isValid(fileName) {
+    async function isValid(fileName) {
         return valid;
     }
 
