@@ -67,4 +67,20 @@ describe('isValidLogFileName', () => {
 
         expect(result).toBe(true);
     });
+
+    /**
+     * an example of use of "injecting a fake just before a method call"
+     * In this case I'm setting a fake extension manager, that converts this in a unit test!!, because
+     * right now I have not external dependencies.
+     */
+    it('return true using extensionManagerFactory', async () => {
+        myFakeExtensionManager.willBeValid(true);
+        const extensionManager = extensionManagerFactory();
+        extensionManager.setManager(myFakeExtensionManager);
+
+        const logAnalyzer = logAnalyzerFactory(extensionManager.create());
+        const result = await logAnalyzer.isValidLogFileName('johndoe.sql');
+
+        expect(result).toBe(true);
+    });
 });
