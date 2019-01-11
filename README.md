@@ -89,6 +89,10 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0c83251">fixing alwaysValidFakeExtensionManager, I didn't create the function return</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/108928e">I created a seam in logAnalyzer, that seam enable the possibility of inject the dependency while are calling the function</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0dac764">using the fakeManagerExtension to fix the failed test from the previous commit</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/3ea220e">creating a extension manager factory that allows to set the extension manager to return before execute it, the default manager it returns is fileExtensionManager</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/ceb8d02">using extensionManagerFactory I created an integration test, because the test is making use of a external dependency, the filesystem</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/baecfdc">using extensionManagerFactory I created an unit test, because the test is making use of a fake extension manager, therefore I'm not using the filesystem that is an external dependency</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/02cbb5b">I have changed the isValid method from the fakes to return a promise instead of a boolean</a><br>
      </p>
     </details>
 
