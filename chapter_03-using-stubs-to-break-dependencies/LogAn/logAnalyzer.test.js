@@ -1,5 +1,6 @@
 const logAnalyzerFactory = require('./logAnalyzer');
 const fakeExtensionManagerFactory = require('./fakeExtensionManager');
+const extensionManagerFactory = require('./extensionManager');
 
 let myFakeExtensionManager;
 
@@ -53,4 +54,17 @@ describe('isValidLogFileName', () => {
             expect(result).toBe(expected);
         }
     );
+
+    /**
+     * an example of use of "injecting a fake just before a method call"
+     * right now I'm not injecting a fake, and extensionManager is returning fileExtensionManager,
+     * therefore this test is an integration test and not a unit test!!!!
+     */
+    it('return true using extensionManagerFactory', async () => {
+        const extensionManager = extensionManagerFactory();
+        const logAnalyzer = logAnalyzerFactory(extensionManager.create());
+        const result = await logAnalyzer.isValidLogFileName('johndoe.sql');
+
+        expect(result).toBe(true);
+    });
 });
