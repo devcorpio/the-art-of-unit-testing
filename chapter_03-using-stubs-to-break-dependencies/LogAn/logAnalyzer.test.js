@@ -2,6 +2,9 @@ const logAnalyzerFactory = require('./logAnalyzer');
 const fakeExtensionManagerFactory = require('./fakeExtensionManager');
 const extensionManagerFactory = require('./extensionManager');
 
+// imported to try the technique "Extract and override"
+const TestableLogAnalyzerClass = require('./testableLogAnalyzer.class');
+
 let myFakeExtensionManager;
 
 beforeEach(() => {
@@ -82,5 +85,27 @@ describe('isValidLogFileName', () => {
         const result = await logAnalyzer.isValidLogFileName('johndoe.sql');
 
         expect(result).toBe(true);
+    });
+
+    /**
+     * I'm using the tecnique "Extract and override", this technique has several steps:
+     *
+     * step 1: create a virtual function in the unit under test(logAnalyzer.js in this case)
+     *    that returns the real extension manager, the one that works with the filesystem
+     *
+     * step 2: create a class that extends of it
+     *
+     * step3: use this new class to create the tests!! :)
+     */
+    it('return false using testableLogAnalyzer', async () => {
+        const expected = false;
+        myFakeExtensionManager.willBeValid(expected);
+
+        const logAnalyzer = new TestableLogAnalyzerClass(
+            myFakeExtensionManager
+        );
+        const result = await logAnalyzer.isValidLogFileName('johndoe.ts');
+
+        expect(result).toBe(expected);
     });
 });
