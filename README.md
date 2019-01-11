@@ -83,6 +83,12 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/e57c8f1">install @types/node, with that, I can work with types and node.js modules without vscode warnings</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/95768cf">check the validity of the file extension in a disk file, that creates an external dependency, unit tests are broken</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/42afa86">fixing logAnalyzer tests, right now they are integration tests and not unit tests, meh</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/8c0bb71">extracting a factory function that touches the filesystem and calling it</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/bdce009">creating a fake extension manager, the name of a fake is because we can use it as a stub or a mock, depending of the test.</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/2c44a3a">create a new fake that is ready to be configurable to use in test</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0c83251">fixing alwaysValidFakeExtensionManager, I didn't create the function return</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/108928e">I created a seam in logAnalyzer, that seam enable the possibility of inject the dependency while are calling the function</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0dac764">using the fakeManagerExtension to fix the failed test from the previous commit</a><br>
      </p>
     </details>
 
