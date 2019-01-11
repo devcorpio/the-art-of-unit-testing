@@ -5,6 +5,10 @@ function alwaysValidFakeExtensionManager() {
     function isValid(fileName) {
         return true;
     }
+
+    return {
+        isValid,
+    };
 }
 
 module.exports = alwaysValidFakeExtensionManager;
