@@ -1,9 +1,6 @@
 const ArgumentError = require('./ArgumentError');
-const fileExtensionManagerFactory = require('./fileExtensionManager');
 
-const fileExtensionManager = fileExtensionManagerFactory();
-
-function logAnalyzer() {
+function logAnalyzer(extensionManager) {
     /**
      * @type {boolean}
      */
@@ -27,7 +24,7 @@ function logAnalyzer() {
             throw new ArgumentError('filename has to be provided');
         }
 
-        const result = await fileExtensionManager.isValid(fileName);
+        const result = await extensionManager.isValid(fileName);
 
         if (!result) {
             return false;
