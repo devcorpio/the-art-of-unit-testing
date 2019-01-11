@@ -4,6 +4,9 @@ function fakeExtensionManager() {
      */
     let valid = false;
 
+    /**
+     * @param {boolean} value
+     */
     function willBeValid(value) {
         valid = value;
     }
