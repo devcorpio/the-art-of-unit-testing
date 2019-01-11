@@ -35,7 +35,6 @@ describe('isValidLogFileName', () => {
     `(
         'when called there changes wasLastFileNameValid that returns $expected',
         ({ fileName, expected }) => {
-            console.log(fileName);
             logAnalyzerInstance.isValidLogFileName(fileName);
             const result = logAnalyzerInstance.getWasLastFileNameValid();
 

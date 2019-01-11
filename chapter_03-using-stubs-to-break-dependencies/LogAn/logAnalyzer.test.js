@@ -1,8 +1,10 @@
-const logAnalyzer = require('./logAnalyzer');
+const logAnalyzerFactory = require('./logAnalyzer');
+const fakeExtensionManagerFactory = require('./fakeExtensionManager');
 
-let logAnalyzerInstance;
+let myFakeExtensionManager;
+
 beforeEach(() => {
-    logAnalyzerInstance = logAnalyzer();
+    myFakeExtensionManager = fakeExtensionManagerFactory();
 });
 
 describe.each([
@@ -11,7 +13,10 @@ describe.each([
     ['johndoe.SLF', true],
 ])('isValidLogFileName("%s"))', (fileName, expected) => {
     it(`bad extension returns ${expected}`, async () => {
-        const result = await logAnalyzerInstance.isValidLogFileName(fileName);
+        myFakeExtensionManager.willBeValid(expected);
+
+        const logAnalyzer = logAnalyzerFactory(myFakeExtensionManager);
+        const result = await logAnalyzer.isValidLogFileName(fileName);
         expect(result).toBe(expected);
     });
 });
@@ -19,7 +24,9 @@ describe.each([
 describe('isValidLogFileName', () => {
     it('empty filename throws error', async () => {
         async function emptyLogFileName() {
-            return logAnalyzerInstance.isValidLogFileName('');
+            const logAnalyzer = logAnalyzerFactory(myFakeExtensionManager);
+
+            return logAnalyzer.isValidLogFileName('');
         }
 
         await expect(emptyLogFileName()).rejects.toThrow(
@@ -37,8 +44,11 @@ describe('isValidLogFileName', () => {
     `(
         'when called there changes wasLastFileNameValid that returns $expected',
         async ({ fileName, expected }) => {
-            await logAnalyzerInstance.isValidLogFileName(fileName);
-            const result = logAnalyzerInstance.getWasLastFileNameValid();
+            myFakeExtensionManager.willBeValid(expected);
+
+            const logAnalyzer = logAnalyzerFactory(myFakeExtensionManager);
+            await logAnalyzer.isValidLogFileName(fileName);
+            const result = logAnalyzer.getWasLastFileNameValid();
 
             expect(result).toBe(expected);
         }
