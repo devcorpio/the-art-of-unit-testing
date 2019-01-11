@@ -93,6 +93,15 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/ceb8d02">using extensionManagerFactory I created an integration test, because the test is making use of a external dependency, the filesystem</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/baecfdc">using extensionManagerFactory I created an unit test, because the test is making use of a fake extension manager, therefore I'm not using the filesystem that is an external dependency</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/02cbb5b">I have changed the isValid method from the fakes to return a promise instead of a boolean</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/3847482">In order to use the technique Extract and Override I needed to create a new file using logAnalyzer as a class and create a virtual method</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/3d89553">testing the the new class using the technique Extract and Override</a><br>
+     </p>
+    </details>
+
+4. _Interaction testing using mock objects_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
      </p>
     </details>
 
