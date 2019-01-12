@@ -1,13 +1,13 @@
 const logAnalyzerFactory = require('./logAnalyzer');
 
-const fakeWebServiceFactory = require('./fakes/fakeWebService');
-
 let myFakeExtensionManager;
 
 describe('analyze', () => {
     let fakeWebService;
     beforeEach(() => {
-        fakeWebService = fakeWebServiceFactory();
+        fakeWebService = {
+            logError: jest.fn(),
+        };
     });
 
     it('too short file calls webService', () => {
@@ -20,6 +20,6 @@ describe('analyze', () => {
         const expectedMessage = `Filename too short: ${fileName}`;
 
         logAnalyzer.analyze(fileName);
-        expect(fakeWebService.getLastError()).toBe(expectedMessage);
+        expect(fakeWebService.logError).toHaveBeenCalledTimes(1);
     });
 });
