@@ -5,6 +5,9 @@ const extensionManagerFactory = require('./extensionManager');
 // imported to try the technique "Extract and override"
 const TestableLogAnalyzerClass = require('./testableLogAnalyzer.class');
 
+// this fake will be used as a mock
+const fakeWebServiceFactory = require('./fakes/fakeWebService');
+
 let myFakeExtensionManager;
 
 beforeEach(() => {
@@ -107,5 +110,25 @@ describe('isValidLogFileName', () => {
         const result = await logAnalyzer.isValidLogFileName('johndoe.ts');
 
         expect(result).toBe(expected);
+    });
+});
+
+describe('analyze', () => {
+    let fakeWebService;
+    beforeEach(() => {
+        fakeWebService = fakeWebServiceFactory();
+    });
+
+    it('too short file calls webService', () => {
+        const logAnalyzer = logAnalyzerFactory(
+            myFakeExtensionManager,
+            fakeWebService
+        );
+
+        const fileName = 'johndoe';
+        const expectedMessage = `Filename too short: ${fileName}`;
+
+        logAnalyzer.analyze(fileName);
+        expect(fakeWebService.getLastError()).toBe(expectedMessage);
     });
 });
