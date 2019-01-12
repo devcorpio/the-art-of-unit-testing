@@ -7,6 +7,15 @@ function fakeWebService() {
     function logError(message) {
         lastError = message;
     }
+
+    function getLastError() {
+        return lastError;
+    }
+
+    return {
+        logError,
+        getLastError,
+    };
 }
 
 module.exports = fakeWebService;
