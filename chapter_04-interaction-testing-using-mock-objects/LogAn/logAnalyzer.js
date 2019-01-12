@@ -1,6 +1,6 @@
 const ArgumentError = require('./errors/ArgumentError');
 
-function logAnalyzer(extensionManager) {
+function logAnalyzer(extensionManager, webService) {
     /**
      * @type {boolean}
      */
@@ -34,9 +34,19 @@ function logAnalyzer(extensionManager) {
         return true;
     }
 
+    /**
+     * @param {string} fileName
+     */
+    function analyze(fileName) {
+        if (fileName.length < 8) {
+            webService.logError(`Filename too short: ${fileName}`);
+        }
+    }
+
     return {
         getWasLastFileNameValid,
         isValidLogFileName,
+        analyze,
     };
 }
 
