@@ -1,4 +1,4 @@
-const fakeExtensionManagerFactory = require('./fakeExtensionManager');
+const fakeExtensionManagerFactory = require('./fakes/fakeExtensionManager');
 const logAnalizer = require('./logAnalyzer.class');
 
 class TestableLogAnalyzer extends logAnalizer {

@@ -1,5 +1,5 @@
 const logAnalyzerFactory = require('./logAnalyzer');
-const fakeExtensionManagerFactory = require('./fakeExtensionManager');
+const fakeExtensionManagerFactory = require('./fakes/fakeExtensionManager');
 const extensionManagerFactory = require('./extensionManager');
 
 // imported to try the technique "Extract and override"

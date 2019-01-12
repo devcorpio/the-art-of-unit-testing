@@ -1,4 +1,4 @@
-const ArgumentError = require('./ArgumentError');
+const ArgumentError = require('./errors/ArgumentError');
 const fileExtensionManagerFactory = require('./fileExtensionManager');
 
 class LogAnalyzer {

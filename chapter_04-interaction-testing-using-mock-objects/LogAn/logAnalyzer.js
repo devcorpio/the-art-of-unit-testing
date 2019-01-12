@@ -1,4 +1,4 @@
-const ArgumentError = require('./ArgumentError');
+const ArgumentError = require('./errors/ArgumentError');
 
 function logAnalyzer(extensionManager) {
     /**
