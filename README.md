@@ -102,6 +102,22 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/36ad452">copy code from chapter 03 to the chapter 04 folder in order to continue with the book</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/e8caed0">organizing a bit more the files to improve the 'first glance' effect of LogAn folder</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/a74aebb">create a new object that fake a call to a web service</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/ae67788">create a basic webservice in order to create an example that I want to create from the book</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/8b1bdd8">adding a parameter that allows to pass an object webService to logAnalyzer</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/c51ced2">creating the real webService connector</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/3fb65ab">fixing fakeWebService, create getter and return both object with the two functions</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/107ca34">create a unit test that use fakeWebService as a mock</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/4da9ca7">adding another fake named emailService, and create a new test where the webService is used as stub and the emailService as a mock</a><br>
+     </p>
+    </details>
+
+5. _Isolation (mocking) frameworks_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
      </p>
     </details>
 
