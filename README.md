@@ -167,6 +167,14 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
+9.  _Integration unit testing into the organization_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - No commits here, wonderful chapter!, this book is a drug for me(a good drug!) :smile:
+     </p>
+    </details>
+
 Working in the rest of the chapters... :grin:
 
 ## How to use
