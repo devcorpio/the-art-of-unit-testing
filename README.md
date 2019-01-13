@@ -118,6 +118,17 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/adc1345">copy logAnalyzer.js, errors and fakes from the folder of chapter 04 in order to continue with the book</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/e1a095c">creating a test that use a fake handwritten</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/0223c9f">instead of use a handwriting fake I create it using jest mocking module!</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/1dcf09b">check that the logError method is called with the expected error message using jest mocking system functions</a><br>
+     </p>
+    </details>
+
+6. _Digging deeper into isolation frameworks_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
      </p>
     </details>
 
