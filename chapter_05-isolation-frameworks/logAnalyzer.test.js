@@ -10,7 +10,7 @@ describe('analyze', () => {
         };
     });
 
-    it('too short file calls webService', () => {
+    it('too short file calls webService with the correct error message', () => {
         const logAnalyzer = logAnalyzerFactory(
             myFakeExtensionManager,
             fakeWebService
@@ -21,5 +21,6 @@ describe('analyze', () => {
 
         logAnalyzer.analyze(fileName);
         expect(fakeWebService.logError).toHaveBeenCalledTimes(1);
+        expect(fakeWebService.logError).toHaveBeenCalledWith(expectedMessage);
     });
 });
