@@ -129,6 +129,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
+        No commits here, this chapter go deep in the explanation about isolation frameworks, interesting concepts! :grin:
      </p>
     </details>
 
