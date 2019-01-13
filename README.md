@@ -137,6 +137,22 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/2fc73fd">initial code to create a test api for the application, the name of the first strategy is abstract test infrastructure class pattern</a><br>
+      - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/df26d6d">refactored solution based in abstract test infrastructure class pattern</a><br>
+
+    - Also Wonderful explanations about concepts as:
+        1. Focus in the importance of separation of unit tests and integration tests.
+        2. Separate them by speed: slows, fasts, etc
+        3. Create nightly builds, CI builds, etc
+        4. More and more :grin: if you want to know all, [buy the book](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890)
+
+     </p>
+    </details>
+
+8. _The pillars of good unit tests_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
      </p>
     </details>
 
