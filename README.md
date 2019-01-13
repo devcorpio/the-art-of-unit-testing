@@ -133,6 +133,13 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
+7. _test hierarchies and organization_
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+     </p>
+    </details>
+
 Working in the rest of the chapters... :grin:
 
 ## How to use
