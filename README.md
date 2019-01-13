@@ -38,7 +38,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
 
 #### Chapters
 
-1. _The basics of unit testing_
+1.  _The basics of unit testing_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -51,7 +51,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-2. _A first unit test_
+2.  _A first unit test_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -75,7 +75,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-3. _Using stubs to break dependencies_
+3.  _Using stubs to break dependencies_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -98,7 +98,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-4. _Interaction testing using mock objects_
+4.  _Interaction testing using mock objects_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -114,7 +114,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-5. _Isolation (mocking) frameworks_
+5.  _Isolation (mocking) frameworks_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -125,7 +125,7 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-6. _Digging deeper into isolation frameworks_
+6.  _Digging deeper into isolation frameworks_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
@@ -133,14 +133,15 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-7. _test hierarchies and organization_
+7.  _test hierarchies and organization_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/2fc73fd">initial code to create a test api for the application, the name of the first strategy is abstract test infrastructure class pattern</a><br>
       - <a href="https://github.com/devcorpio/the-art-of-unit-testing/commit/df26d6d">refactored solution based in abstract test infrastructure class pattern</a><br>
 
-    - Also Wonderful explanations about concepts as:
+    -   Also Wonderful explanations about concepts as:
+
         1. Focus in the importance of separation of unit tests and integration tests.
         2. Separate them by speed: slows, fasts, etc
         3. Create nightly builds, CI builds, etc
@@ -149,10 +150,20 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-8. _The pillars of good unit tests_
+8.  _The pillars of good unit tests_
 
     <details><summary>git commits done during the chapter :shipit:</summary>
      <p>
+      - No commits here, in this chapter Roy speaks deeply about:
+
+         1. Writing trustworthy tests
+         2. Writing maintainable tests
+         3. Writing readable tests
+         4. Exploring naming conventions for unit tests.
+
+    <br>
+    Thanks to the content of this chapter I have said to myself many times "aha", this chapter by itself triggers a message,and the message is: "buy the book!" :grin: I enjoyed a lot this chapter.
+
      </p>
     </details>
 
