@@ -175,6 +175,15 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
+10. _Working with legacy code_
+
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - No commits here, several amazing concepts! :smile: :smile:
+     </p>
+    </details>
+
 Working in the rest of the chapters... :grin:
 
 ## How to use
