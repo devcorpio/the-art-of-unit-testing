@@ -184,7 +184,16 @@ The style of the code and the chosen tools are 100% my decision. (The good and t
      </p>
     </details>
 
-Working in the rest of the chapters... :grin:
+11. _Design and testability_
+
+
+    <details><summary>git commits done during the chapter :shipit:</summary>
+     <p>
+      - No commits here. I finished the read and study of the book, to read this book should be a must in my opinion
+     </p>
+    </details>
+
+:grin: :grin: :grin:
 
 ## How to use
 
